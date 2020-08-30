@@ -4,7 +4,8 @@
   "description": "Deep learing about Vue Source Code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "rollup -c",
+    "serve": "cross-env ENV=development rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Rainboycc/DeepLearningVue/issues"
   },
-  "homepage": "https://github.com/Rainboycc/DeepLearningVue#readme"
+  "homepage": "https://github.com/Rainboycc/DeepLearningVue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "cross-env": "^7.0.2",
+    "rollup": "^2.26.8",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-serve": "^1.0.4"
+  }
 }
